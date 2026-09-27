@@ -1,0 +1,29 @@
+{
+  "name": "pseo-engine",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "tsx scripts/migrate.ts && next build",
+    "start": "next start",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:seed": "tsx scripts/seed.ts",
+    "sync": "tsx scripts/sync.ts",
+    "audit": "tsx scripts/audit.ts",
+    "setup": "tsx scripts/migrate.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.3",
+    "mysql2": "^3.24.4",
+    "next": "^15.5.26",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.12"
+  }
+}
